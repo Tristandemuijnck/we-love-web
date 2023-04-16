@@ -2,7 +2,7 @@
 
 </script>
 
-<h1>Index page</h1>
+<h1>We Love Web page</h1>
 
 <style>
 

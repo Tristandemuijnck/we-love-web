@@ -2,7 +2,7 @@
 
 </script>
 
-<h1>Index page</h1>
+<h1>Projects page</h1>
 
 <style>
 

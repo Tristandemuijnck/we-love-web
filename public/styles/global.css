@@ -1,0 +1,39 @@
+:root{
+    --primary-color: #050507;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #f98f2b;
+    --faded-black: #14141a;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Imports */
+@font-face{
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+    font-weight: 400;
+}
+
+/* General */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: var(--primary-color);
+    color: white;
+}
