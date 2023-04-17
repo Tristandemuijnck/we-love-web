@@ -1,17 +1,13 @@
 <script>
-    
+    import Nav from '$lib/components/Nav.svelte'
+    import Footer from '$lib/components/Footer.svelte'
 </script>
 
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/weloveweb">We❤️Web</a></li>
-        <li><a href="/logboek">Logboek</a></li>
-    </ul>
-</nav>
+<Nav />
 
 <slot></slot>
+
+<Footer />
 
 <style>
 
