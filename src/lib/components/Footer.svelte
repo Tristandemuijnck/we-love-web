@@ -11,6 +11,7 @@
         display: flex;
         justify-content: center;
         border-top: solid 1px var(--third-color);
+        height: 3vh;
     }
 
     p{
