@@ -108,12 +108,12 @@
     }
 
     .heading{
-        font-size: 1.8em;
+        font-size: 1.9em;
         letter-spacing: 1px;
     }
 
     .sub-heading{
-        font-size: 1.2em;
+        font-size: 1.3em;
         letter-spacing: 1px;
         margin-top: 0.1em;
     }
@@ -121,7 +121,7 @@
     .p-info{
         margin-top: 1.5em;
         font-family: 'Bebas Neue Pro Regular', sans-serif;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     button{
@@ -132,7 +132,7 @@
         color: white;
         font-family: 'Bebas Neue', sans-serif;
         margin-top: 1.2em;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
 </style>
