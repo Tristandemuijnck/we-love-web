@@ -30,7 +30,6 @@
             </ul>
         </div>
     </div>
-    
 </nav>
 
 <style>
@@ -120,7 +119,7 @@
         height: 100%;
     }
 
-    a{
+    li a{
         color: var(--secondary-color);
         font-size: 2.1em;
     }
