@@ -7,10 +7,10 @@
     <div class="info-pic">
 
         <!-- Blob with picture -->
-        <div class="image-mask">
+        <div class="image-wrapper">
 
             <!-- Background svg -->
-            <svg class="mask" width="225" height="225" viewBox="0 0 225 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="bg-svg" width="225" height="225" viewBox="0 0 225 225" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.43462 84.1543C11.5201 60.5603 19.6668 31.5859 40.6355 15.5006C61.9201 -0.697969 96.2289 -4.43688 128.846 5.99281C161.665 15.993 192.905 40.478 207.68 73.7232C222.884 107.171 221.622 149.38 201.164 173.847C181.022 198.201 141.683 204.815 106.549 214.203C71.4139 223.591 40.4828 235.755 23.0362 224.881C5.58964 214.007 1.6276 180.096 0.703164 153.661C-0.221277 127.226 1.46259 108.064 6.43462 84.1543Z" fill="url(#paint0_linear_29_220)" />
                 <defs>
                     <linearGradient id="paint0_linear_29_220" x1="242.552" y1="169.85" x2="-38.9096" y2="24.9264" gradientUnits="userSpaceOnUse">
@@ -20,18 +20,21 @@
                 </defs>
             </svg>
 
-            <!-- Mask svg -->
-            <svg width="225" height="225" viewBox="0 0 225 225" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.43462 84.1543C11.5201 60.5603 19.6668 31.5859 40.6355 15.5006C61.9201 -0.697969 96.2289 -4.43688 128.846 5.99281C161.665 15.993 192.905 40.478 207.68 73.7232C222.884 107.171 221.622 149.38 201.164 173.847C181.022 198.201 141.683 204.815 106.549 214.203C71.4139 223.591 40.4828 235.755 23.0362 224.881C5.58964 214.007 1.6276 180.096 0.703164 153.661C-0.221277 127.226 1.46259 108.064 6.43462 84.1543Z" fill="url(#paint0_linear_29_220)" />
-                <defs>
-                    <linearGradient id="paint0_linear_29_220" x1="242.552" y1="169.85" x2="-38.9096" y2="24.9264" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#F87537" />
-                        <stop offset="1" stop-color="#FBA81F" />
-                    </linearGradient>
-                </defs>
-            </svg>
-            <!-- Profile picture -->
-            <img class="img" src="/img/pf2.png" alt="Profile pic" width="225" height="225" >
+            <div class="masking-div">
+                <!-- Mask svg -->
+                <svg width="225" height="225" viewBox="0 0 225 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.43462 84.1543C11.5201 60.5603 19.6668 31.5859 40.6355 15.5006C61.9201 -0.697969 96.2289 -4.43688 128.846 5.99281C161.665 15.993 192.905 40.478 207.68 73.7232C222.884 107.171 221.622 149.38 201.164 173.847C181.022 198.201 141.683 204.815 106.549 214.203C71.4139 223.591 40.4828 235.755 23.0362 224.881C5.58964 214.007 1.6276 180.096 0.703164 153.661C-0.221277 127.226 1.46259 108.064 6.43462 84.1543Z" fill="url(#paint0_linear_29_220)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_29_220" x1="242.552" y1="169.85" x2="-38.9096" y2="24.9264" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F87537" />
+                            <stop offset="1" stop-color="#FBA81F" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <!-- Profile picture -->
+                <img class="masked-img" src="/img/pf2.png" alt="Profile pic" width="225" height="225" >
+            </div>
+            
         </div>
     </div>
 
@@ -70,15 +73,20 @@
         position: relative;
     }
 
-    .image-mask{
+    .image-wrapper{
         position: relative;
         display: flex;
         justify-content: center;
         height: auto;
-        /* clip-path: path("M6.43462 84.1543C11.5201 60.5603 19.6668 31.5859 40.6355 15.5006C61.9201 -0.697969 96.2289 -4.43688 128.846 5.99281C161.665 15.993 192.905 40.478 207.68 73.7232C222.884 107.171 221.622 149.38 201.164 173.847C181.022 198.201 141.683 204.815 106.549 214.203C71.4139 223.591 40.4828 235.755 23.0362 224.881C5.58964 214.007 1.6276 180.096 0.703164 153.661C-0.221277 127.226 1.46259 108.064 6.43462 84.1543Z"); */
     }
 
-    .mask{
+    .masking-div{
+        position: relative;
+        display: flex;
+        clip-path: path("M6.43462 84.1543C11.5201 60.5603 19.6668 31.5859 40.6355 15.5006C61.9201 -0.697969 96.2289 -4.43688 128.846 5.99281C161.665 15.993 192.905 40.478 207.68 73.7232C222.884 107.171 221.622 149.38 201.164 173.847C181.022 198.201 141.683 204.815 106.549 214.203C71.4139 223.591 40.4828 235.755 23.0362 224.881C5.58964 214.007 1.6276 180.096 0.703164 153.661C-0.221277 127.226 1.46259 108.064 6.43462 84.1543Z");
+    }
+
+    .bg-svg{
         position: absolute;
         filter: blur(15px);
         height: auto;
@@ -86,16 +94,10 @@
         bottom: 0;
     }
 
-    .img{
-        /* width: 100%; */
-        /* height: auto; */
+    .masked-img{
         position: absolute;
         bottom: 0;
-        -webkit-mask-image: url('/img/mask2.svg');
-        mask-image: url('/img/mask2.svg');
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        /* transform: translateY(10px); */
+        transform: translateY(16px) translateX(-15px);
     }
 
     /* About me text */
