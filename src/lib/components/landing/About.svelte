@@ -32,7 +32,11 @@
                     </defs>
                 </svg>
                 <!-- Profile picture -->
-                <img class="masked-img" src="/img/pf2.png" alt="Profile pic" width="225" height="225" >
+                <picture class="masked-img">
+                    <source srcset="/img/pf2.webp" type="image/webp">
+                    <img src="/img/pf2.png" alt="Profile pic" width="225" height="225" >
+                </picture>
+                
             </div>
             
         </div>
@@ -92,6 +96,10 @@
         height: auto;
         width: 100%;
         bottom: 0;
+    }
+
+    picture{
+        position: relative;
     }
 
     .masked-img{

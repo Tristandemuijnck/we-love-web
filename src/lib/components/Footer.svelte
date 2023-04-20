@@ -17,5 +17,6 @@
     p{
         padding: 0.6em;
         letter-spacing: 1px;
+        font-size: 0.7em;
     }
 </style>

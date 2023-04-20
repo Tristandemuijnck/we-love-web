@@ -4,7 +4,7 @@
 
 <section class="skills">
     <div class="skills-content">
-        <h1>Skills</h1>
+        <h2>Skills</h2>
         <div class="skills-container">
             <p>PHP</p>
             <p>Express</p>
@@ -31,6 +31,7 @@
         display: flex;
         flex-direction: column;
         background: var(--faded-black);
+        padding-bottom: 6em;
     }
 
     .skills-content{
@@ -39,7 +40,7 @@
         margin-top: 5em;
     }
 
-    h1{
+    h2{
         font-size: 1.9em;
         letter-spacing: 1px;
         text-align: right;
