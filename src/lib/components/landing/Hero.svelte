@@ -22,7 +22,7 @@
     .hero{
         width: 100%;
         margin: 0 auto;
-        height: 66vh;
+        height: calc(100vh - var(--nav-height));
         display: flex;
         flex-direction: column;
         justify-content: center;
