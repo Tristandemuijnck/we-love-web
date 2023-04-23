@@ -86,14 +86,6 @@
         display: flex;
     }
 
-    /* :global(body.open-menu) .menu-btn{
-        display: none;
-    }
-
-    :global(body.open-menu) .close-btn, :global(body.open-menu) .nav-overlay{
-        display: flex;
-    } */
-
     /* Overlay */
     .nav-overlay{
         display: none
@@ -133,5 +125,31 @@
     li a{
         color: var(--secondary-color);
         font-size: 2.1em;
+    }
+
+    /* --------------------------------- Tablet --------------------------------- */
+    @media (min-width: 48rem){
+        .menu-btn{
+            display: none;
+        }
+
+        .nav-overlay{
+            display: flex;
+        }
+
+        .nav-content{
+            background: unset;
+        }
+
+        ul{
+            flex-direction: row;
+            gap: 1em;
+            align-items: flex-end;
+        }
+
+        li a{
+            font-size: initial;
+            font-size: 1.2em;
+        }
     }
 </style>

@@ -25,7 +25,6 @@
         height: calc(100vh - var(--nav-height));
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
 
@@ -36,7 +35,6 @@
     .hero-text{
         display: flex;
         flex-direction: column;
-        /* padding-top: 20vh; */
     }
 
     .hero-text-upper{
@@ -89,7 +87,35 @@
         font-size: 1em;
     }
 
-    @media (min-width: 32rem){
+    /* --------------------------------- Tablet --------------------------------- */
+    @media (min-width: 48rem){
+        .hero{
+            width: 80%;
+            align-items: unset;
+        }
 
+        .hero-content{
+            margin-top: 20vh;
+        }
+
+        .name p:nth-child(1){
+            font-size: 6.5em;
+        }
+
+        .name p:nth-child(2){
+            font-size: 4.42em;
+        }
+
+        .rotated{
+            font-size: 5.24em;
+        }
+
+        .sub-line{
+            font-size: 0.896em;
+        }
+
+        a{
+            font-size: 1.2em;
+        }
     }
 </style>
