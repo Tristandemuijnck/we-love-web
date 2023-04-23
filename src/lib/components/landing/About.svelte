@@ -63,7 +63,7 @@
         /* align-items: center; */
         /* justify-content: center; */
         padding-top: 6em;
-        background: var(--faded-black);
+        background: rgba(var(--faded-black-rgb), 0.9);
     }
 
     /* Profile picture & Mask */
