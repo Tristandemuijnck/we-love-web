@@ -133,8 +133,15 @@
             display: none;
         }
 
-        .nav-overlay{
+        .close-btn.open{
+            display: none;
+        }
+
+        .nav-overlay, .nav-overlay.open{
             display: flex;
+            position: initial;
+            width: unset;
+            height: unset;
         }
 
         .nav-content{
