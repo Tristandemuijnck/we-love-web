@@ -22,11 +22,15 @@
     .hero{
         width: 100%;
         margin: 0 auto;
-        height: 66vh;
+        height: calc(100vh - var(--nav-height));
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
+    }
+
+    .hero-content{
+        margin-top: 25vh;
     }
 
     .hero-text{
@@ -83,5 +87,9 @@
         padding: 0.4em 1em;
         letter-spacing: 5px;
         font-size: 1em;
+    }
+
+    @media (min-width: 32rem){
+
     }
 </style>

@@ -30,7 +30,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background: var(--faded-black);
+        background: rgba(var(--faded-black-rgb), 0.9);
         padding-bottom: 6em;
     }
 
