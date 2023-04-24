@@ -60,7 +60,29 @@
         font-family: 'Bebas Neue', sans-serif;
         letter-spacing: 3px;
         font-size: 1.2em;
-        display: flex;
+        display: block;
+        position: relative;
+    }
+
+    .menu-btn:hover{
+        cursor: pointer;
+    }
+
+    .menu-btn::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background: var(--secondary-color);
+        transition: 250ms ease-in-out;
+        margin: 0 auto;
+    }
+
+    .menu-btn:hover::after{
+        width: 100%;
+        transition: 250ms ease-in-out;
     }
 
     .nav-close{
@@ -84,6 +106,26 @@
         font-size: 1.2em;
         margin-right: 0.6em;
         display: flex;
+    }
+
+    .close-btn.open:hover{
+        cursor: pointer;
+    }
+
+    .close-btn.open::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background: var(--secondary-color);
+        transition: 250ms ease-in-out;
+    }
+
+    .close-btn.open:hover::after{
+        width: calc(100% - 0.6em);
+        transition: 250ms ease-in-out;
     }
 
     /* Overlay */
@@ -125,6 +167,24 @@
     li a{
         color: var(--secondary-color);
         font-size: 2.1em;
+        position: relative;
+    }
+
+    li a::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background: var(--secondary-color);
+        transition: 250ms ease-in-out;
+        margin: 0 auto;
+    }
+
+    li a:hover::after{
+        width: 100%;
+        transition: 250ms ease-in-out;
     }
 
     /* --------------------------------- Tablet --------------------------------- */

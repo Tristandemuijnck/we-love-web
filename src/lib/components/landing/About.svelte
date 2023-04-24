@@ -143,4 +143,23 @@
         font-size: 1.2em;
     }
 
+    /* --------------------------------- Tablet --------------------------------- */
+    @media (min-width: 48rem){
+        .about{
+            flex-direction: row;
+        }
+
+        .info-pic{
+            width: 100%;
+        }
+
+        .info-text{
+            width: 100%;
+        }
+
+        .p-info{
+            width: 80%;
+        }
+    }
+
 </style>

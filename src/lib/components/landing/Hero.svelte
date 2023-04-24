@@ -70,6 +70,11 @@
         color: transparent;
         -webkit-text-stroke: 1px #FFFFFF;
         line-height: 0.85em;
+        transition: 500ms ease-in-out;
+    }
+
+    .rotated:hover{
+        text-shadow: 0 0 5px var(--third-color), 0 0 25px var(--third-color), 0 0 50px var(--third-color), 0 0 100px var(--third-color); 
     }
 
     .sub-line{
@@ -85,7 +90,25 @@
         padding: 0.4em 1em;
         letter-spacing: 5px;
         font-size: 1em;
+        border: 2px solid transparent;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        animation: pulsing 1.35s infinite cubic-bezier(0.66, 0, 0, 1);
+        transition: all 300ms ease-in-out;
     }
+
+    a:hover{
+        animation: none;
+        background: transparent;
+        color: var(--secondary-color);
+        border: solid 2px var(--secondary-color);
+    }
+
+    @keyframes pulsing {
+        to {
+            box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+        }
+    }   
+
 
     /* --------------------------------- Tablet --------------------------------- */
     @media (min-width: 48rem){
