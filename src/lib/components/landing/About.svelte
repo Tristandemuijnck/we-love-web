@@ -96,6 +96,11 @@
         height: auto;
         width: 100%;
         bottom: 0;
+        transition: .2s ease-in-out;
+    }
+
+    .image-wrapper:hover .bg-svg{
+        filter: blur(20px);
     }
 
     picture{
@@ -134,13 +139,20 @@
 
     button{
         background: var(--third-color);
-        border: none;
+        border: solid 2px var(--third-color);
         border-radius: 1em;
         padding: 0.3em 1em;
         color: white;
         font-family: 'Bebas Neue', sans-serif;
         margin-top: 1.2em;
         font-size: 1.2em;
+        transition: all 150ms ease-in-out;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background: var(--second-color);
+        border: solid 2px var(--third-color);
     }
 
     /* --------------------------------- Tablet --------------------------------- */
