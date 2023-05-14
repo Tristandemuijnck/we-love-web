@@ -1,6 +1,5 @@
 <script>
     import Nav from '$lib/components/Nav.svelte'
-    import Footer from '$lib/components/Footer.svelte'
 
     import { onMount } from 'svelte'
     import { createScene } from '$lib/scene.js'
@@ -17,8 +16,6 @@
 <Nav />
 
 <slot></slot>
-
-<Footer />
 
 <style>
     canvas{
