@@ -57,4 +57,5 @@ body{
     font-family: 'Bebas Neue', sans-serif;
     background-color: var(--primary-color);
     color: white;
+    cursor: crosshair;
 }

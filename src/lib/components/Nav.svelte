@@ -35,7 +35,7 @@
 
 <style>
     nav{
-        width: 80%;
+        width: 90%;
         margin: 0.6em auto 0 auto;
         display: flex;
         justify-content: space-between;
