@@ -16,13 +16,13 @@
     <!-- Contact info -->
     <div class="contact-info">
         <div class="contact-left">
-            <img src="" alt="" class="icon" width="65" height="65">
-            <img src="" alt="" class="icon" width="65" height="65">
-            <img src="" alt="" class="icon" width="65" height="65">
+            <img src="/img/icons/github.svg" alt="" class="icon" width="65" height="65">
+            <img src="/img/icons/linkedin.svg" alt="" class="icon" width="65" height="65">
+            <img src="/img/icons/instagram.svg" alt="" class="icon" width="65" height="65">
             <p class="contact-text">Tristandemuijnck</p>
         </div>
         <div class="contact-right">
-            <img src="" alt="" class="icon" width="65" height="65">
+            <img src="/img/icons/mail.svg" alt="" class="icon" width="65" height="65">
             <p class="contact-text">tristandemuijnck@hotmail.com</p>
         </div>
     </div>

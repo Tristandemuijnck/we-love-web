@@ -27,7 +27,10 @@
                 A tool for commentating on Ultimate Frisbee games.<br> View game stats, player stats an player facts.
             </p>
         </div>
-        <img src="" alt="" class="project-img" width="600" height="400">
+        <div class="project-img">
+            <source srcset="/img/ultitv.webp" type="image/webp">
+            <img src="/img/ultitv.png" alt="" width="1024" height="625">
+        </div>
     </div>
 
     <div class="project-card">
@@ -37,7 +40,10 @@
                 Landing page for getting started with AI.<br> Find information about the AI design sprint and how it can change and automate company processes.
             </p>
         </div>
-        <img src="" alt="" class="project-img" width="600" height="400">
+        <div class="project-img">
+            <source srcset="/img/lifely.webp" type="image/webp">
+            <img src="/img/lifely.png" alt="" width="1024" height="556">
+        </div>
     </div>
 
     <div class="project-card">
@@ -47,7 +53,10 @@
                 A tool for checking accessibility on your website.<br> Find possible accessibility improvements.
             </p>
         </div>
-        <img src="" alt="" class="project-img" width="600" height="400">
+        <div class="project-img">
+            <source srcset="/img/vervoerregio.webp" type="image/webp">
+            <img src="/img/vervoerregio.png" alt="" width="1024" height="556">
+        </div>
     </div>
 
 </section>
