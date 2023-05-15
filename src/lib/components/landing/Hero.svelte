@@ -6,17 +6,16 @@
     <!-- Intro and name -->
     <div class="hero-title">
         <p class="pre-name">Hi, i'm</p>
-        <p class="name">Tristan</p>
-        <p class="name">De Muijnck</p>
+        <h1 class="name">Tristan<br> De Muijnck</h1>
         <a href="#projects">Projects</a>
     </div>
 
     <!-- Background text -->
     <div class="hero-text-left">
-        <p class="large-text">App developer</p>
+        <p class="bg-text">App developer</p>
     </div>
     <div class="hero-text-right">
-        <p class="large-text">Student FDND</p>
+        <p class="bg-text">Student FDND</p>
     </div>
 
     <!-- Scroll buttons menu -->
