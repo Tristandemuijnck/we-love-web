@@ -11,13 +11,13 @@
     </div>
 
     <a href="#projects" class="hero-btn">Projects</a>
-    
+
     <!-- Background text -->
     <div class="hero-text-left">
-        <p class="bg-text">App developer</p>
+        <p class="bg-text left-text">App developer</p>
     </div>
     <div class="hero-text-right">
-        <p class="bg-text">Student FDND</p>
+        <p class="bg-text right-text">Student FDND</p>
     </div>
 
     <!-- Scroll buttons menu -->
@@ -25,26 +25,28 @@
 </section>
 
 <style>
-
     .hero{
         width: 100%;
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        padding: 6em 0 0 2rem;
+        overflow: hidden;
         position: relative;
     }
 
     .hero-title{
-        margin-left: 16rem;
-        margin-top: 6rem;
-        margin-bottom: 2.5rem;
+        padding-bottom: 1rem;
     }
 
     .pre-name{
-        font-size: 4em;
+        font-size: 3em;
         color: transparent;
         -webkit-text-stroke: 1px #fff;
     }
 
     .first-name, .last-name{
-        font-size: 8em;
+        font-size: 4em;
         font-weight: normal;
         line-height: 0.8;
         position: relative;
@@ -72,11 +74,33 @@
 
     .hero-btn{
         border: solid 1px white;
-        margin-left: 16rem;
-        padding: 0.4em 1em;
+        padding: 0.2em 0.5em;
         letter-spacing: 5px;
-        font-size: 1.5em;
+        font-size: 1.1em;
         color: white;
+        margin-right: auto;
     }
 
+    .hero-text-left, .hero-text-right{
+        position: relative;
+    }
+
+    .bg-text{
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        font-size: 6em;
+        opacity: 0.3;
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    .left-text{
+        top: 6rem;
+        left: -15.5rem;
+    }
+
+    .right-text{
+        top: 16rem;
+        right: -13.6rem;
+    }
 </style>

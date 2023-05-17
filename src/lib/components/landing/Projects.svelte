@@ -3,7 +3,7 @@
 </script>
 
 <section class="projects" id="projects">
-    
+
     <!-- Projects heading text -->
     <h2>PROJECTS</h2>
 
@@ -62,5 +62,7 @@
 </section>
 
 <style>
-
+    .projects{
+        overflow: hidden;
+    }
 </style>

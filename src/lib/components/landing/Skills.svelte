@@ -80,5 +80,68 @@
 </section>
 
 <style>
+    .skills{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+    }
 
+    h2{
+        font-size: 4em;
+        font-weight: normal;
+        position: relative;
+        text-transform: uppercase;
+        padding-left: 2rem;
+    }
+
+    h2::after{
+        content: "SKILLS";
+        white-space: pre;
+        color: transparent;
+        position: absolute;
+        left: 2px;
+        top: -2px;
+        -webkit-text-stroke: 1px #fff;
+        padding-left: 2rem;
+    }
+
+    .skill-cards{
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        margin: 2em auto 2em auto;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+
+    .skill-card{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #111116;
+        border: solid 1px #fff;
+        gap: 0.4rem;
+        padding: 0.8rem 0;
+    }
+
+    .skill-svg{
+        margin-bottom: 0.6rem;
+    }
+
+    .skill-title{
+        font-size: 1.3em;
+    }
+
+    .skill-title::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: var(--third-color);
+    }
 </style>
