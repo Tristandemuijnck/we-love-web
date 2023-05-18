@@ -87,6 +87,7 @@
         flex-direction: column;
         overflow: hidden;
         position: relative;
+        margin-bottom: 8rem;
     }
 
     h2{
