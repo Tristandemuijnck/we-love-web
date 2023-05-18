@@ -18,8 +18,8 @@
         <div class="contact-left">
             <div class="icons">
                 <a href="https://github.com/Tristandemuijnck"><img src="/img/icons/github.svg" alt="" class="icon" width="65" height="65"></a>
-                <a href=""><img src="/img/icons/linkedin.svg" alt="" class="icon" width="65" height="65"></a>
-                <a href=""><img src="/img/icons/instagram.svg" alt="" class="icon" width="65" height="65"></a>
+                <a href="https://www.linkedin.com/in/tristandemuijnck/"><img src="/img/icons/linkedin.svg" alt="" class="icon" width="65" height="65"></a>
+                <a href="https://www.instagram.com/tristandemuijnck/"><img src="/img/icons/instagram.svg" alt="" class="icon" width="65" height="65"></a>
             </div>
             <p class="contact-text">Tristandemuijnck</p>
         </div>
