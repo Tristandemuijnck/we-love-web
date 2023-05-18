@@ -1,5 +1,33 @@
 <script>
     import ScrollButtons from "$lib/components/small-elements/ScrollButtons.svelte";
+    import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
+    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+    let gallery
+    let mm = gsap.matchMedia()
+
+    onMount(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        mm.add("(min-width: 48rem)", () => {
+            gsap.to(gallery, {
+                xPercent: -100,
+                x: () => innerWidth,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: gallery,
+                    start: "top top",
+                    end: () => innerWidth * 6,
+                    scrub: 2,
+                    pin: true,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                    // markers: true
+                }
+            })
+        })
+    })
+
 </script>
 
 <section class="projects" id="projects">
@@ -10,53 +38,48 @@
     <!-- Scroll buttons menu -->
     <ScrollButtons />
 
-    <!-- Projects nav -->
-    <nav>
-        <ul>
-            <li><a href="#ultitv">UltiTV</a></li>
-            <li><a href="#lifely">Lifely</a></li>
-            <li><a href="#vervoerregio">Vervoerregio</a></li>
-        </ul>
-    </nav>
+    <!-- Projects gallery -->
+    <div class="project-gallery" bind:this={gallery}>
 
-    <!-- Project cards -->
-    <div class="project-card">
-        <div class="project-text">
-            <h2 class="project-title">UltiTV</h2>
-            <p class="project-desc">
-                A tool for commentating on Ultimate Frisbee games.<br> View game stats, player stats an player facts.
-            </p>
+        <!-- Project card -->
+        <div class="project-card">
+            <div class="project-text">
+                <h2 class="project-title">UltiTV</h2>
+                <p class="project-desc">
+                    A tool for commentating on Ultimate Frisbee games.<br> View game stats, player stats and player facts.
+                </p>
+            </div>
+            <picture class="project-img-wrap">
+                <source class="project-img" srcset="/img/ultitv.webp" type="image/webp">
+                <img class="project-img" src="/img/ultitv.png" alt="" width="1024" height="625">
+            </picture>
         </div>
-        <picture class="project-img-wrap">
-            <source class="project-img" srcset="/img/ultitv.webp" type="image/webp">
-            <img class="project-img" src="/img/ultitv.png" alt="" width="1024" height="625">
-        </picture>
-    </div>
 
-    <div class="project-card">
-        <div class="project-text text-right">
-            <h2 class="project-title">Lifely</h2>
-            <p class="project-desc">
-                Landing page for getting started with AI.<br> Find information about the AI design sprint and how it can change and automate company processes.
-            </p>
+        <div class="project-card">
+            <div class="project-text text-right">
+                <h2 class="project-title">Lifely</h2>
+                <p class="project-desc">
+                    Landing page for getting started with AI.<br> Find information about the AI design sprint and how it can change and automate company processes.
+                </p>
+            </div>
+            <picture class="project-img-wrap">
+                <source class="project-img" srcset="/img/lifely.webp" type="image/webp">
+                <img class="project-img" src="/img/lifely.png" alt="" width="1024" height="556">
+            </picture>
         </div>
-        <picture class="project-img-wrap">
-            <source class="project-img" srcset="/img/lifely.webp" type="image/webp">
-            <img class="project-img" src="/img/lifely.png" alt="" width="1024" height="556">
-        </picture>
-    </div>
 
-    <div class="project-card">
-        <div class="project-text">
-            <h2 class="project-title">Vervoerregio</h2>
-            <p class="project-desc">
-                A tool for checking accessibility on your website.<br> Find possible accessibility improvements.
-            </p>
+        <div class="project-card">
+            <div class="project-text text-middle">
+                <h2 class="project-title">Vervoerregio</h2>
+                <p class="project-desc">
+                    A tool for checking accessibility on your website.<br> Find possible accessibility improvements.
+                </p>
+            </div>
+            <picture class="project-img-wrap">
+                <source class="project-img" srcset="/img/vervoerregio.webp" type="image/webp">
+                <img class="project-img" src="/img/vervoerregio.png" alt="" width="1024" height="556">
+            </picture>
         </div>
-        <picture class="project-img-wrap">
-            <source class="project-img" srcset="/img/vervoerregio.webp" type="image/webp">
-            <img class="project-img" src="/img/vervoerregio.png" alt="" width="1024" height="556">
-        </picture>
     </div>
 
 </section>
@@ -90,10 +113,6 @@
         top: -2px;
         -webkit-text-stroke: 1px #fff;
         padding-right: 2rem;
-    }
-
-    ul{
-        display: none;
     }
 
     .project-card{
@@ -141,13 +160,87 @@
         width: 100%;
         height: 100%;
         background: black;
-        opacity: 0.4;
+        opacity: 0.6;
     }
 
     .project-img{
         width: 100%;
         height: auto;
         filter: grayscale(100%);
+    }
+
+    @media (min-width: 39rem){
+        .project-title{
+            font-size: 3.2em;
+        }
+
+        .project-desc{
+            font-size: 1.2em;
+        }
+    }
+
+    @media (min-width: 48rem){
+        .projects{
+            width: unset;
+            min-height: unset;
+            overflow: unset;
+            padding-bottom: 300vh;
+            overflow: hidden;
+        }
+        .heading{
+            font-size: 6em;
+            right: 5rem;
+        }
+
+        .project-gallery{
+            height: 100vh;
+            width: calc(300vw + 22rem);
+            display: flex;
+            position: relative;
+            gap: 5rem;
+            margin-left: 15rem;
+        }
+
+        .project-card{
+            flex-direction: row;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            position: relative;
+        }
+
+        .project-text{
+            position: absolute;
+            z-index: 2;
+            bottom: 29%;
+            left: -3rem;
+            /* background: #3a3a3a40; */
+            padding: 0.4rem;
+            width: unset;
+            max-width: 24rem;
+        }
+
+        .text-right{
+            align-items: flex-start;
+            bottom: 54%;
+        }
+
+        .text-right .project-desc{
+            text-align: left;
+        }
+
+        .text-middle{
+            bottom: 41%;
+        }
+
+        .project-img-wrap{
+            margin-left: 5rem;
+        }
+
+        .project-img{
+            width: 38rem;
+        }
     }
 
 </style>

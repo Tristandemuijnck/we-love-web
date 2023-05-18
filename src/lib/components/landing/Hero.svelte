@@ -103,4 +103,46 @@
         top: 16rem;
         right: -13.6rem;
     }
+
+    @media (min-width: 39rem){
+        .hero-title{
+            margin-left: 3rem;
+        }
+
+        .pre-name{
+            font-size: 4em;
+        }
+
+        .first-name, .last-name{
+            font-size: 5em;
+        }
+
+        .hero-btn{
+            font-size: 1.5em;
+            margin-left: 3rem;
+        }
+
+        .bg-text{
+            font-size: 8em;
+        }
+    }
+
+    @media (min-width: 48rem){
+        .hero-title{
+            margin-left: 5rem;
+        }
+
+        .hero-btn{
+            margin-left: 5rem;
+        }
+
+        .left-text{
+            left: -3rem;
+        }
+
+        .right-text{
+            top: 17rem;
+            right: -1rem;
+        }
+    }
 </style>

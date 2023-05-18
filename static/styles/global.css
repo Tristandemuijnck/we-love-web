@@ -55,6 +55,22 @@ html{
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: var(--primary-color);
+	border-radius: 10px;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--primary-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--faded-black);
+	border-radius: 10px;
+}
+
 body{
     font-family: 'Bebas Neue', sans-serif;
     background-color: var(--primary-color);

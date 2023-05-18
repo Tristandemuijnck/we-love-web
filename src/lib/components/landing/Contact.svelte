@@ -108,4 +108,37 @@
         gap: 2rem;
         margin-top: 2rem;
     }
+
+    @media (min-width: 39rem){
+        .icon{
+            width: 2.5rem;
+        }
+
+        .contact-text{
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width: 48rem){
+        .contact{
+            flex-direction: row-reverse;
+            align-items: center;
+            min-height: 60vh;
+        }
+        h2{
+            writing-mode: vertical-rl;
+            font-size: 6rem;
+        }
+
+        .bg-text{
+            display: flex;
+            position: absolute;
+            left: -0.7rem;
+            top: -5rem;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            font-size: 8em;
+            opacity: 0.3;
+        }
+    }
 </style>

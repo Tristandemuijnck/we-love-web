@@ -145,4 +145,52 @@
         height: 1px;
         background: var(--third-color);
     }
+
+    @media (min-width: 39rem){
+        .skills{
+            height: 100%;
+            min-height: unset;
+        }
+        .skill-cards{
+            justify-content: flex-start;
+        }
+        .skill-card{
+            width: 31%;
+        }
+
+        .skill-title{
+            font-size: 1.5em;
+        }
+
+        .skill-level, .skill-years{
+            font-size: 1.1em;
+        }
+    }
+
+    @media (min-width: 48rem){
+        .skills{
+            flex-direction: row;
+            margin-top: 8rem;
+        }
+
+        h2{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            margin: auto 0;
+            font-size: 6em;
+            top: -6rem;
+        }
+
+        .skill-card{
+            width: 25%;
+        }
+
+        .skill-title{
+            font-size: 1.6em;
+        }
+
+        .skill-level, .skill-years{
+            font-size: 1.2em;
+        }
+    }
 </style>
