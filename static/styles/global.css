@@ -53,6 +53,7 @@ a{
 /* General */
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 html::-webkit-scrollbar-track{
@@ -76,4 +77,5 @@ body{
     background-color: var(--primary-color);
     color: white;
     cursor: crosshair;
+    height: auto;
 }

@@ -12,12 +12,12 @@
         mm.add("(min-width: 48rem)", () => {
             gsap.to(gallery, {
                 xPercent: -100,
-                x: () => innerWidth,
+                // x: () => innerWidth,
                 ease: "none",
                 scrollTrigger: {
                     trigger: gallery,
                     start: "top top",
-                    end: () => innerWidth * 6,
+                    end: () => "+=" + gallery.offsetWidth,
                     scrub: 2,
                     pin: true,
                     anticipatePin: 1,
@@ -196,6 +196,7 @@
             height: 100vh;
             width: calc(300vw + 22rem);
             display: flex;
+            flex-direction: row;
             position: relative;
             gap: 5rem;
             margin-left: 15rem;

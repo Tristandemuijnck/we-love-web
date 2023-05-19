@@ -123,7 +123,7 @@
         .contact{
             flex-direction: row-reverse;
             align-items: center;
-            min-height: 60vh;
+            min-height: 100vh;
         }
         h2{
             writing-mode: vertical-rl;
