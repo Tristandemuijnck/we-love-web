@@ -184,7 +184,7 @@
             width: unset;
             min-height: unset;
             overflow: unset;
-            padding-bottom: 300vh;
+            padding-bottom: 315vh;
             overflow: hidden;
         }
         .heading{
@@ -241,6 +241,12 @@
 
         .project-img{
             width: 38rem;
+        }
+    }
+
+    @media (min-width: 90rem){
+        .projects{
+            padding-bottom: 335vh;
         }
     }
 
