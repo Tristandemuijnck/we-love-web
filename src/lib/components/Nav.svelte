@@ -25,9 +25,9 @@
         <div class="nav-content">
         <!-- Nav links -->
             <ul>
-                <li><a href="/" on:click={toggleMenu}>Home</a></li>
-                <li><a href="/weloveweb" on:click={toggleMenu}>We<span>🧡</span>Web</a></li>
-                <li><a href="/logboek" on:click={toggleMenu}>Logboek</a></li>
+                <li><a href="#skills" on:click={toggleMenu}>Skills</a></li>
+                <li><a href="#projects" on:click={toggleMenu}>Projects</a></li>
+                <li><a href="#contact" on:click={toggleMenu}>Contact</a></li>
             </ul>
         </div>
     </div>

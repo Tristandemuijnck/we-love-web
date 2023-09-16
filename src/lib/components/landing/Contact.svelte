@@ -19,7 +19,7 @@
             <div class="icons">
                 <a href="https://github.com/Tristandemuijnck"><img src="/img/icons/github.svg" alt="" class="icon" width="65" height="65"></a>
                 <a href="https://www.linkedin.com/in/tristandemuijnck/"><img src="/img/icons/linkedin.svg" alt="" class="icon" width="65" height="65"></a>
-                <a href="https://www.instagram.com/tristandemuijnck/"><img src="/img/icons/instagram.svg" alt="" class="icon" width="65" height="65"></a>
+                <!-- <a href="https://www.instagram.com/tristandemuijnck/"><img src="/img/icons/instagram.svg" alt="" class="icon" width="65" height="65"></a> -->
             </div>
             <p class="contact-text">Tristandemuijnck</p>
         </div>
@@ -134,7 +134,7 @@
             display: flex;
             position: absolute;
             left: -0.7rem;
-            top: -5rem;
+            top: 0rem;
             color: transparent;
             -webkit-text-stroke: 1px #fff;
             font-size: 8em;
