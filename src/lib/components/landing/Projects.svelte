@@ -44,19 +44,6 @@
         <!-- Project card -->
         <div class="project-card">
             <div class="project-text">
-                <h2 class="project-title">UltiTV</h2>
-                <p class="project-desc">
-                    A tool for commentating on Ultimate Frisbee games.<br> View game stats, player stats and player facts.
-                </p>
-            </div>
-            <picture class="project-img-wrap">
-                <source class="project-img" srcset="/img/ultitv.webp" type="image/webp">
-                <img class="project-img" src="/img/ultitv.png" alt="" width="1024" height="625">
-            </picture>
-        </div>
-
-        <div class="project-card">
-            <div class="project-text text-right">
                 <h2 class="project-title">Lifely</h2>
                 <p class="project-desc">
                     Landing page for getting started with AI.<br> Find information about the AI design sprint and how it can change and automate company processes.
@@ -65,6 +52,19 @@
             <picture class="project-img-wrap">
                 <source class="project-img" srcset="/img/lifely.webp" type="image/webp">
                 <img class="project-img" src="/img/lifely.png" alt="" width="1024" height="556">
+            </picture>
+        </div>
+
+        <div class="project-card">
+            <div class="project-text text-right">
+                <h2 class="project-title">UltiTV</h2>
+                <p class="project-desc">
+                    A tool for commentating on Ultimate Frisbee games.<br> View game stats, player stats and player facts.
+                </p>
+            </div>
+            <picture class="project-img-wrap">
+                <source class="project-img" srcset="/img/ultitv.webp" type="image/webp">
+                <img class="project-img" src="/img/ultitv.png" alt="" width="1024" height="625">
             </picture>
         </div>
 
@@ -184,7 +184,7 @@
             width: unset;
             min-height: unset;
             overflow: unset;
-            padding-bottom: 315vh;
+            padding-bottom: 180vh;
             overflow: hidden;
         }
         .heading{
@@ -194,7 +194,7 @@
 
         .project-gallery{
             height: 100vh;
-            width: calc(300vw + 22rem);
+            width: calc(175vw + 22rem);
             display: flex;
             flex-direction: row;
             position: relative;
